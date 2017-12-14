@@ -11,6 +11,9 @@
     "test": "karma start karma.local.js",
     "test:remote": "karma start karma.remote.js"
   },
+  "engines": {
+    "node": ">=6.9.5"
+  },
   "babel": {
     "plugins": [
       "transform-object-assign"
@@ -57,10 +60,14 @@
   },
   "homepage": "https://github.com/sinnerschrader/shadow-dom#readme",
   "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.5.1",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
     "karma-browserstack-launcher": "^1.3.0",
@@ -70,7 +77,8 @@
     "karma-jasmine": "^1.1.0",
     "karma-safari-launcher": "^1.0.0",
     "karma-viewport": "^0.4.2",
-    "karma-webpack": "^2.0.5",
+    "karma-webpack": "^2.0.8",
+    "mocha": "^4.0.1",
     "puppeteer": "^0.13.0",
     "raw-loader": "^0.5.1",
     "uglifyjs-webpack-plugin": "^1.1.2",
@@ -79,6 +87,11 @@
   },
   "dependencies": {
     "postcss-selector-parser": "^3.1.1",
+    "@types/htmlparser2": "^3.7.31",
+    "domhandler": "^2.4.1",
+    "htmlparser2": "^3.9.2",
+    "postcss": "^6.0.14",
+    "rxme": "^1.2.6",
     "shortid": "^2.2.8",
     "specificity": "^0.3.2"
   }
